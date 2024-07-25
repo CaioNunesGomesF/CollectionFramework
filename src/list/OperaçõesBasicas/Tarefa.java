@@ -1,10 +1,11 @@
+
 package list.OperaçõesBasicas;
 
 public class Tarefa {
-
+    //atributo
     private String descricao;
 
-    public Tarefa(String descrição) {
+    public Tarefa(String descricao) {
         this.descricao = descricao;
     }
 
