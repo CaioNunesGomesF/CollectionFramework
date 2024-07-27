@@ -17,7 +17,7 @@ public class Produto implements Comparable{
         this.quantidade = quantidade;
     }
 
-    @Override
+    //@Override
     public int compareTo(Produto p) {
         return this.nome.compareToIgnoreCase(p.getNome());
     }
@@ -58,6 +58,11 @@ public class Produto implements Comparable{
                 ", nome: " + nome + '\'' +
                 ", preco: " + preco +
                 ", quantidade: " + quantidade;
+    }
+
+    @Override
+    public int compareTo(Object o) {
+        return 0;
     }
 
     static class ComparatorPorPreco implements Comparator<Produto>{
